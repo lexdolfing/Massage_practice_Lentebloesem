@@ -42,7 +42,18 @@ body {
 h1 {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 500;
-    font-size: 45px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--steel-teal);
+    font-size: 40px;
+    text-align: center;
+}
+
+p  {
+    text-align: justify;
 }
 
 
@@ -85,7 +96,7 @@ h1 {
 
 header {
     background: var(--cadet-blue);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -251,24 +262,67 @@ header h1, p {
 
 /* --------------- 4.2.2 Main section 2: About Bertine ------------------- */
 
+.main-section2-article_text {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.main-section2__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section2-article_text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 0;
+    width: 430px;
+}
 
 
 .main-section2__image {
     display: flex;
-    flex-basis: auto;
+    flex-basis: 430px;
     height: 300px;
     flex-shrink: 1;
     flex-grow: 0;
     justify-content: center;
+
 }
 
 .main-section2__image img {
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+
 }
 
+
 /* --------------- 4.2.1 Main section 3: Booking form ------------------- */
+
+.main-section3__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 320px;
+    flex-shrink: 0;
+}
+
+fieldset {
+    overflow: hidden;
+}
+
+.contact-form__radio input, .contact-form__radio label {
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+}
 
 /* --------------- 4.3 Footer contact info ------------------------- */
 
