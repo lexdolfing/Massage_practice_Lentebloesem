@@ -306,12 +306,31 @@ header h1, p {
 
 /* --------------- 4.2.1 Main section 3: Booking form ------------------- */
 
+.outer-content-container-main-section3  {
+    background-color: var(--morning-blue);
+
+}
+.outer-content-container-main-section3 h2 {
+    color: white;
+}
+
+.main-section3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-section3__form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     min-width: 320px;
-    flex-shrink: 0;
+    max-width: 1000px;
+    color: white;
+    flex-shrink: 1;
+}
+
+.main-section3__form ::placeholder {
+    padding: 0 0 0 1em;
 }
 
 fieldset {
@@ -322,6 +341,31 @@ fieldset {
     display: inline-block;
     width: auto;
     margin: 5px;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+
+
+form input {
+    height: 3em;
+    border: none;
+    margin: 10px 0 30px 0;
+}
+
+#radio-form-legend {
+    width: auto;
+    margin-left: 1em;
+    padding: 0 4px 0 4px;
+}
+
+#button2 {
+background-color: var(--ebony);
+    align-items: center;
+
 }
 
 /* --------------- 4.3 Footer contact info ------------------------- */
